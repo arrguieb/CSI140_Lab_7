@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Techniques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>CSS Techniques</h1>
+    <nav>
+        <ul>
+            <li><a href="#block-quote">Block Quote</a></li>
+            <li><a href="#float">Float</a></li>
+            <li><a href="#flow-root">Flow-Root</a></li>
+            <li><a href="#overflow">Overflow</a></li>
+            <li><a href="#z-index">Z-Index & Positions</a></li>
+            <li><a href="#important">!important</a></li>
+            <li><a href="#pseudo-elements">Pseudo Elements</a></li>
+            <li><a href="#pseudo-classes">Pseudo Classes</a></li>
+            <li><a href="#transitions">Transitions & Transform</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="block-quote">
+        <h2>Block Quote</h2>
+        <blockquote>
+            "This is an example of a block quote. It stands out from the rest of the text."
+        </blockquote>
+    </section>
+
+    <section id="float">
+        <h2>Float</h2>
+        <div class="float-box">This box is floated to the left.</div>
+        <div class="clearfix">
+            <p>This is some content that flows around the floated box. By using the clearfix technique, we ensure that the container adapts to the height of the floated elements.</p>
+        </div>
+    </section>
+
+    <section id="flow-root">
+        <h2>Flow-Root</h2>
+        <div class="flow-root">
+            <div class="float-box">This box is floated to the left.</div>
+            <p>This is some content that flows around the floated box. Using flow-root ensures the container creates a new block formatting context, preventing the collapse of its height.</p>
+        </div>
+    </section>
+
+    <section id="overflow">
+        <h2>Overflow</h2>
+        <div class="overflow-box">
+            <div class="overflow-content">
+                This content is larger than its container, so it overflows. Scroll to see the rest of the content.
+            </div>
+        </div>
+    </section>
+
+    <section id="z-index">
+        <h2>Z-Index & Positions</h2>
+        <div class="position-box">
+            <div class="inner-box"></div>
+            <div class="inner-box2"></div>
+        </div>
+    </section>
+
+    <section id="important">
+        <h2>!important</h2>
+        <div class="important-box">
+            This box uses the !important rule to override other styles.
+        </div>
+    </section>
+
+    <section id="pseudo-elements">
+        <h2>Pseudo Elements</h2>
+        <p class="pseudo-element">
+            This paragraph demonstrates the use of pseudo-elements.
+        </p>
+    </section>
+
+    <section id="pseudo-classes">
+        <h2>Pseudo Classes</h2>
+        <div class="pseudo-class">
+            <a href="#">Hover, Active, and Visited</a>
+        </div>
+    </section>
+
+    <section id="transitions">
+        <h2>Transitions & Transform</h2>
+        <div class="transition-box"></div>
+    </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    margin-top: 1rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 1rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 2rem;
+}
+section {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+h2 {
+    margin-top: 0;
+}
+/* Block Quote */
+blockquote {
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+    color: #666;
+    margin: 1rem 0;
+    font-style: italic;
+}
+/* Float */
+.float-box {
+    float: left;
+    width: 30%;
+    margin-right: 1rem;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Flow-Root */
+.flow-root::before,
+.flow-root::after {
+    content: "";
+    display: table;
+}
+.flow-root::after {
+    clear: both;
+}
+/* Overflow */
+.overflow-box {
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+.overflow-content {
+    height: 200px;
+    background-color: #ddd;
+    padding: 1rem;
+}
+/* Z-Index and Positions */
+.position-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    margin-bottom: 1rem;
+}
+.position-box .inner-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.5);
+    z-index: 2;
+}
+.position-box .inner-box::before {
+    content: "Z-index example";
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+.position-box .inner-box2 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: 1;
+}
+/* !important */
+.important-box {
+    background-color: #ff0 !important;
+    padding: 1rem;
+    color: #000 !important;
+}
+/* Pseudo Elements */
+.pseudo-element::before {
+    content: "Before - ";
+    color: #888;
+}
+.pseudo-element::after {
+    content: " - After";
+    color: #888;
+}
+/* Pseudo Classes */
+.pseudo-class a:hover {
+    color: red;
+}
+.pseudo-class a:active {
+    color: blue;
+}
+.pseudo-class a:visited {
+    color: purple;
+}
+/* Transitions and Transform */
+.transition-box {
+    width: 100px;
+    height: 100px;
+    background-color: #00f;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.transition-box:hover {
+    background-color: #f00;
+    transform: rotate(45deg);
+}
